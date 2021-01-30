@@ -1,0 +1,112 @@
+.clear{
+  clear: both;
+  overflow: hidden;
+}
+navigator{
+  display:inline;
+}
+/*轮播控件*/
+.home-swiper {
+  width: 95%;
+  height: 400rpx;
+}
+.slide-image {
+  width: 100%;
+  height: 100%;
+}
+.list{
+  margin-top:20rpx;
+  width: 90%;
+  margin: auto 38rpx;
+  background-color: #b9e8fa;
+  border-radius: 12rpx;
+}
+ 
+.list .list_item{
+  margin-top:20rpx;
+  padding:20rpx;
+  height:260rpx;
+}
+.list .list_item .numbering{
+  color: #747474;
+  margin-left:20rpx;
+  font-size: 24rpx;
+}
+.list .list_item .img{
+  float:left;
+  width: 36%;
+  height: 80%;
+  margin-top: 17rpx;
+}
+.list .list_item .img image{
+   width:100%;
+   height:100%;
+}
+ 
+.list .list_item .info{
+  width:59%;
+  float:right;
+  height:200rpx;
+  position:relative;
+}
+.list .list_item .info .title{
+  color:#333;
+  margin-left:20rpx;
+  font-size: 30rpx;
+  margin-top:20rpx;
+}
+ 
+.list .list_item .info .price{
+  color:#FF2727;
+  margin-left:20rpx;
+  margin-top:20rpx;
+  font-size:32rpx;
+}
+.list .list_item .info .explain{
+  color: #747474;
+  margin-left:20rpx;
+  margin-top:20rpx;
+  font-size: 24rpx;
+}
+.list .list_item .info .num{
+  position: absolute;
+  left:0rpx;
+  bottom:20rpx;
+  color:#747474;
+  margin-left:20rpx;
+  font-size:30rpx;
+}
+.list .list_item .info .purchase{
+  width: 220rpx;
+  height:70rpx;
+  background-color: red;
+  color: white;
+  line-height: 70rpx;
+  position: absolute;
+  left:140rpx;
+  bottom:-16rpx;
+  font-size: 38rpx;
+}
+
+/* .saoma{
+  width: 200rpx;
+  height: 200rpx;
+  background-color: #60cef8;
+  border-radius: 50%;
+  margin: 130rpx auto;
+  position: relative;
+}
+.saoma .imgsao{
+  width: 80rpx;
+  height: 80rpx;
+  margin:50rpx 60rpx;
+}
+.saoma .textsao{
+  display: inline-block;
+  color: white;
+  font-size: 26rpx;
+  position: absolute;
+  bottom: 20rpx;
+  left: 50rpx;
+  width: 300rpx;
+} */

@@ -1,0 +1,22 @@
+<!--pages/feedback/feedback.wxml-->
+<view class="box">
+  <form bindsubmit="formSubmit">
+    <view class="page-section">
+      <view class="weui-cell">
+        <view class="title">设备编号</view>
+        <input class="weui-input" name="numbering" type="text" placeholder="请输入您的设备编号" value='' />
+      </view>
+      <view class="weui-cell">
+        <view class="title">问题</view>
+        <input class="weui-input" name="titleName" type="text" placeholder="请输入您的问题" value='' />
+      </view>
+      <view class="weui-cell">
+        <view class="title">问题描述</view>
+        <input class="weui-input" name="contentName" type="text" placeholder="请输入您的意见反馈" value='' />
+      </view>
+    </view>
+    <view class="btn-area">
+      <button formType="submit">提交</button>
+    </view>
+  </form>
+</view>

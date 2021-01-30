@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<view class="box">
+  <!--轮播图-->
+  <swiper class="home-swiper" indicator-dots="true" autoplay="{{autoplay}}" interval="{{interval}}"
+    duration="{{duration}}">
+    <block wx:for-items="{{lunboData}}" wx:key='lunboData'>
+      <swiper-item>
+        <image src="{{item.imgurl}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 商品区 -->
+  <view class='list'>
+    <block wx:for='{{dataList}}' wx:key='list' wx:for-item="item">
+      <view class="list_item">
+        <navigator url='details?id={{item.id}}'>
+          <view class="numbering">编号 : {{numbering}}</view>
+          <view class='img'>
+            <image src="{{item.pictureUrl}}" mode="scaleToFill" />
+          </view>
+          <view class='info'>
+            <view class='title'>【{{item.name}}】</view>
+            <view class="explain">{{item.commodityDesc}}</view>
+            <view class='price'>￥{{item.money}}</view>
+            <button class="purchase" bindtap="blueTooth">立即购买</button>
+          </view>
+        </navigator>
+      </view>
+    </block>
+  </view>
+  <!-- 扫一扫 -->
+
+  <!-- <view class="saoma" bindtap="scanCode">
+    <image src="../../utils/img/sao.png" class="imgsao"></image>
+    <text class="textsao">扫码开启</text>
+  </view> -->
+  <!-- <web-view src="{{scanResult}}"></web-view> -->
+</view>

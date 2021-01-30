@@ -1,0 +1,109 @@
+/* pages/mine/mine.wxss */
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+button{
+  margin-top: 20rpx;
+}
+.userinfo, .uploader, .tunnel {
+  margin-top: 20rpx;
+  height: 140rpx;
+  width: 100%;
+  background: #fff;
+  border: 2rpx solid rgba(0, 0, 0, 0.1);
+  border-left: none;
+  border-right: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 300ms ease;
+}
+
+.userinfo {
+  padding-left: 120rpx;
+}
+
+.userinfo-avatar {
+  width: 112rpx;
+  height: 100rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  background-size: cover;
+  background-color: white;
+}
+
+.userinfo-avatar[size] {
+  width: 100rpx;
+}
+
+
+.userinfo-avatar:after {
+  border: none;
+}
+
+.userinfo-nickname {
+  font-size: 32rpx;
+  color: #60cef8;
+  background-color: white;
+  background-size: cover;
+  text-align: left;
+  padding-left: 0;
+  margin-left: 10px;
+  width: 100%;
+}
+
+.userinfo-nickname::after {
+  border: none;
+}
+
+.userinfo-nickname-wrapper {
+  flex: 1;
+}
+.list-wrapper {
+  width: 100%;
+}
+
+/* 横着的分割View样式 */
+/*分割线样式*/
+.div-line{
+  background: #E0E3DA;
+  width: 100%;
+  height: 3rpx;
+}
+
+.list-item {
+  width: 100%;
+  height: 120rpx;
+}
+
+.list-item_active {
+  background-color: #E0E3DA;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 120rpx;
+}
+.item-text {
+  position: fixed;
+  left: 120rpx;
+  font-size: 28rpx;
+}
+.item-array {
+  position: fixed;
+  right: 50rpx;
+  font-size: 38rpx;
+  color: gray;
+}
+
+.item-image {
+  position: fixed;
+  left: 50rpx;
+  width: 40rpx;
+  height: 40rpx;
+}

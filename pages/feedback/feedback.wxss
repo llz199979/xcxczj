@@ -1,0 +1,24 @@
+/* pages/feedback/feedback.wxss */
+.title{
+  margin-top: 38rpx;
+  margin-left: 30rpx;
+  font-size: 32rpx;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+}
+.weui-input{
+  font-size: 28rpx;
+  margin-left: 30rpx;
+  margin-top: 18rpx;
+}
+.btn-area{
+  margin-top: 219rpx;
+  margin-left: 84rpx;
+  width: 600rpx;
+}
+.btn-area button{
+  font-size: 35rpx;
+  color: white;
+  background-color:#60cef8;
+  border: none;
+}

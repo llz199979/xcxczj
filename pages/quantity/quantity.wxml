@@ -1,0 +1,27 @@
+<!--pages/quantity/quantity.wxml-->
+<view class="box">
+  <form bindsubmit="formSubmit">
+    <view class="page-section">
+      <view class="weui-cell">
+        <view class="title">编号</view>
+        <input class="weui-input" name="numbering" type="text" placeholder="请输入设备编号" value='' />
+      </view>
+      <view class="weui-cell">
+        <view class="title">上货数量</view>
+        <input class="weui-input" name="number" type="text" placeholder="请输入上货数量" value='' />
+      </view>
+      <view class="weui-cell">
+        <view class="title">操作人</view>
+        <input class="weui-input" name="operator" type="text" placeholder="请输入操作人" value='' />
+      </view>
+      <view class="weui-cell">
+        <view class="title">备注</view>
+        <input class="weui-input" name="remarks" type="text" placeholder="请输入备注" value='' />
+      </view>
+    </view>
+    <view class="btn-area">
+      <button formType="submit">提交</button>
+    </view>
+  </form>
+</view>
+

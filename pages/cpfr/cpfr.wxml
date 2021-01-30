@@ -1,0 +1,18 @@
+<!--pages/cpfr/cpfr.wxml-->
+<view class="box">
+  <form bindsubmit="formSubmit">
+    <view class="page-section">
+      <view class="weui-cell">
+        <view class="title">账号</view>
+        <input class="weui-input" name="acount" type="text" placeholder="请输入登录账号" value='' />
+      </view>
+      <view class="weui-cell">
+        <view class="title">密码</view>
+        <input class="weui-input" name="password" type="pwd" placeholder="请输入密码" value='' />
+      </view>
+    </view>
+    <view class="btn-area">
+      <button formType="submit">登录</button>
+    </view>
+  </form>
+</view>

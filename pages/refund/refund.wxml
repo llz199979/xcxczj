@@ -1,0 +1,22 @@
+
+<view class='list'>
+    <block wx:for='{{refundList}}' wx:key='list' wx:for-item="item">
+      <view class="list_item">
+        <navigator url='details?id={{item.id}}'>
+          <view class='img'>
+            <image src="{{orderUrl}}" mode="scaleToFill" />
+          </view>
+          <view class='info'>
+            <view class='title'>{{orderName}}</view>
+            <view class="explain">{{item.orderStartTimes}}</view>
+            <view class='price'>￥{{item.money}}</view>
+            <view class='orderNum'>{{item.equipmentAddress}}</view>
+            <view class='orderNum'>{{item.orderNumber}}</view>
+            <button wx:if="{{item.orderStatus==3}}" class="purchase">已退款</button>
+          </view>
+        </navigator>
+        <view class='clear'></view>
+      </view>
+    </block>
+  </view>
+

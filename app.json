@@ -1,0 +1,40 @@
+{
+  "pages": [   
+    
+    "pages/index/index", 
+    "pages/login/login", 
+    "pages/mine/mine",
+    "pages/logs/logs",
+    "pages/cpfr/cpfr",
+    "pages/order/order",
+    "pages/refund/refund",
+    "pages/feedback/feedback",
+    "pages/quantity/quantity"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#60cef8",
+    "navigationBarTitleText": "MJK售货机",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#2e2e2e",
+    "selectedColor": "#60cef8",
+    "backgroundColor": "white",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "utils/img/main2.png",
+      "selectedIconPath": "utils/img/main.png"
+    },
+    {
+      "pagePath": "pages/mine/mine",
+      "text": "我的",
+      "iconPath": "utils/img/mine2.png",
+      "selectedIconPath": "utils/img/mine.png"
+    }],
+    "position": "bottom"
+  },
+  "sitemapLocation": "sitemap.json"
+}

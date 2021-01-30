@@ -1,0 +1,24 @@
+<view class="container">
+  <view wx:if="{{!user}}">
+    <button type="primary" bindtap="onLogin" open-type="getUserInfo">请登录</button>
+  </view>
+  <view class="userinfo">
+    <block>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">欢迎{{nickName}}</text>
+    </block>
+  </view>
+  <!-- 功能列表 -->
+  <view class="list-wrapper">
+    <block wx:for="{{menuitems}}" wx:key="item">
+      <navigator url="{{item.url}}" class="list-item" hover-class="list-item_active">
+        <view class='item'>
+          <image class='item-image' src="{{item.icon}}"></image>
+          <text class="item-text">{{item.text}}</text>
+          <text class='item-array'>></text>
+        </view>
+        <view class="div-line"></view>
+      </navigator>
+    </block>
+  </view>
+</view>
